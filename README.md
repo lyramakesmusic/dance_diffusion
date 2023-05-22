@@ -66,8 +66,8 @@ steps = 100
 filename = "path/to/your/output/file.wav"
 
 model = dd(ckpt_path, sample_size, sample_rate)
-audio_data = model.gen(batch_size, steps)
-audio_data.save(filename)
+
+model.gen(batch_size, steps).save(filename)
 
 print("Generated audio file saved to:")
 print(filename)

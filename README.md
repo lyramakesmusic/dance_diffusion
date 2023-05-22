@@ -20,7 +20,7 @@ Note: Make sure you have the required trained model checkpoint file (`.ckpt`) in
 Here is a small collection of models I've finetuned. Quality *will* vary! You'll need to do multiple generations and manually slice up the samples for good results.
 
 | Model      | Sample Length | Sample Rate | Finetuning Steps | Link |
-| ----------- | ----------- | ----------- | ----------- |
+| ----------- | ----------- | ----------- | ----------- |----------- |
 | Neuro & dubstep basses | 131072 | 44100 | 6500 steps | [Download](https://drive.google.com/file/d/1-IL74bhrZKrYbjfmEmG70dEWezFfxJgW/view?usp=sharing) (3.3GB)|
 | Drum fills   | 131072 | 44100 | 1500 steps | [Download](https://drive.google.com/file/d/1-B2S1AhyDz4eMK9n3xRnPclW4OzV7lLf/view?usp=sharing) (3.3GB)        |
 | Hardstyle kicks | 65536 | 44100 | 5500 | [Download](https://drive.google.com/file/d/1-S6gGj5qW1mKQP4yxNyO4XXpUzZkjYsU/view?usp=sharing) (3.3GB)  |

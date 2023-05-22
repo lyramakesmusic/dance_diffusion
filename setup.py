@@ -9,8 +9,6 @@ setup(
         "torchaudio",
         "einops",
         "scipy",
-        "k-diffusion",
-        "v-diffusion-pytorch",
-        "sample-generator",
+        "k-diffusion"
     ],
 )

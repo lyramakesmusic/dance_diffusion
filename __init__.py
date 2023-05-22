@@ -1,1 +1,1 @@
-from .dance_diffusion import dd
+from dance_diffusion import dd

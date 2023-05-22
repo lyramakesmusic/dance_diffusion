@@ -17,6 +17,8 @@ pip install -r requirements.txt
 
 Note: Make sure you have the required trained model checkpoint file (`.ckpt`) in the project directory.
 
+[Here](https://drive.google.com/file/d/1-IL74bhrZKrYbjfmEmG70dEWezFfxJgW/view?usp=sharing) is a jmann-small I trained on a collection of neuro & dubstep basses for 6500 steps.
+
 ## Usage
 
 Import `dd` and create an instance with your checkpoint path, sample size, and sample rate:

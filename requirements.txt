@@ -1,0 +1,9 @@
+torch
+torchaudio
+einops
+scipy
+ipywidgets==7.7.1
+gradio
+k-diffusion
+git+https://github.com/crowsonkb/v-diffusion-pytorch
+git+https://github.com/harmonai-org/sample-generator

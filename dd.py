@@ -12,9 +12,20 @@ import os
 import math
 import k_diffusion as K
 
+class AudioData:
+    def __init__(self, tensor, sample_rate):
+        self.data = tensor
+        self.sample_rate = sample_rate
+
+    def save(self, filename):
+        write(filename, self.sample_rate, self.data.cpu().numpy().T)
+        return filename
+    
 class dd:
     def __init__(self, ckpt_path, sample_size=131072, sample_rate=44100):
         super().__init__()
+        self.sample_size = sample_size
+        self.sample_rate = sample_rate
         dd_args = self._get_dd_args(sample_size, sample_rate)
         self.model = self._load_model(dd_args, ckpt_path)
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -65,12 +76,12 @@ class dd:
     def alpha_sigma_to_t(self, alpha, sigma):
         return torch.atan2(sigma, alpha) / math.pi * 2
 
-    def gen(self, output_folder, batch_size, sample_size, steps):
-        noise = torch.randn([batch_size, 2, sample_size]).to(self.device)
+    def gen(self, batch_size, steps):
+        noise = torch.randn([batch_size, 2, self.sample_size]).to(self.device)
         generated = self.dd_sample(self.model_fn, noise, steps)
         generated = generated.clamp(-1, 1)
-        save_paths = [
-            self.save_np_to_wav(output_folder, gen_sample.cpu().numpy().T, sample_size, "gen")
-            for gen_sample in generated
-        ]
-        return save_paths
+        return AudioData(generated, self.sample_rate)
+    
+    def save(self, audio, filename):
+        write(filename, self.sample_rate, audio.cpu().numpy().T)
+        return filename

@@ -17,6 +17,8 @@ pip install -r requirements.txt
 
 Note: Make sure you have the required trained model checkpoint file (`.ckpt`) in the project directory.
 
+## Pretrained models
+
 Here is a small collection of models I've finetuned. Quality *will* vary! You'll need to do multiple generations and manually slice up the samples for good results.
 
 | Model      | Sample Length | Sample Rate | Finetuning Steps | Link |

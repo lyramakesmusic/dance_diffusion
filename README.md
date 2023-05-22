@@ -2,8 +2,6 @@
 
 A simple python wrapper for Harmonai's [dance diffusion](https://github.com/Harmonai-org/sample-generator) inference.
 
----
-
 ## Installation
 
 Clone the repository and install the required libraries:

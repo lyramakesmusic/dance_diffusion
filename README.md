@@ -58,16 +58,9 @@ tensor_data = audio_data.data
 ```python
 from dance_diffusion import dd
 
-ckpt_path = "path/to/your/checkpoint.ckpt"
-sample_size = 131072
-sample_rate = 44100
-batch_size = 5
-steps = 100
-filename = "path/to/your/output/file.wav"
+model = dd("path/to/your/checkpoint.ckpt", sample_size=131072, sample_rate=44100)
 
-model = dd(ckpt_path, sample_size, sample_rate)
-
-model.gen(batch_size, steps).save(filename)
+model.gen(batch_size=5, steps=100).save("path/to/your/output/file.wav")
 
 print("Generated audio file saved to:")
 print(filename)

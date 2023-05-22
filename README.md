@@ -64,7 +64,7 @@ tensor_data = audio_data.data
 
 `tensor_data` will be the PyTorch tensor containing the raw audio data.
 
-## Full Example
+## Example
 
 ```python
 from dance_diffusion import dd

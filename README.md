@@ -36,17 +36,24 @@ model = dd(ckpt_path, sample_size, sample_rate)
 Generate a batch of audio clips using the model:
 
 ```python
-output_folder = "outputs"
 batch_size = 5
 steps = 100
 
-save_paths = model.generate_audio(output_folder, batch_size, sample_size, steps)
+audio_data = model.gen(batch_size, steps)
+
+filename = "path/to/your/output/file.wav"
+audio_data.save(filename)
 ```
 
-`save_paths` is a list of the file paths of generated audio clips in WAV format.
+Note: The `audio_data` object is an instance of `AudioData`, which is a wrapper for a tensor that includes a `.save()` method. To extract the tensor data directly from the `AudioData` object, you can use:
 
+```python
+tensor_data = audio_data.data
+```
 
-## Example
+`tensor_data` will be the PyTorch tensor containing the raw audio data.
+
+## Full Example
 
 ```python
 from dance_diffusion import dd
@@ -54,14 +61,14 @@ from dance_diffusion import dd
 ckpt_path = "path/to/your/checkpoint.ckpt"
 sample_size = 131072
 sample_rate = 44100
-output_folder = "outputs"
 batch_size = 5
 steps = 100
+filename = "path/to/your/output/file.wav"
 
 model = dd(ckpt_path, sample_size, sample_rate)
-save_paths = model.generate_audio(output_folder, batch_size, sample_size, steps)
+audio_data = model.gen(batch_size, steps)
+audio_data.save(filename)
 
-print("Generated audio files:")
-for path in save_paths:
-    print(path)
+print("Generated audio file saved to:")
+print(filename)
 ```

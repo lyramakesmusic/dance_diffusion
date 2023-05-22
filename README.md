@@ -10,7 +10,7 @@ Clone the repository and install the required libraries:
 
 ```bash
 git clone https://github.com/lyramakesmusic/dance_diffusion.git
-cd dancediffusion
+cd dance_diffusion
 pip install -e .
 ```
 

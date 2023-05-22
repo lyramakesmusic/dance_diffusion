@@ -1,9 +1,0 @@
-einops
-pandas
-prefigure
-pytorch_lightning
-scipy
-torch
-torchaudio
-tqdm
-wandb

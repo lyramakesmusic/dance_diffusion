@@ -1,6 +1,6 @@
 # dance_diffusion
 
-A simple python wrapper for dance diffusion inference.
+A simple python wrapper for Harmonai's [dance diffusion](https://github.com/Harmonai-org/sample-generator) inference.
 
 ---
 

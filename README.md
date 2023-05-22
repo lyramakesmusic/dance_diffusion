@@ -9,9 +9,9 @@ A simple python wrapper for dance diffusion inference.
 Clone the repository and install the required libraries:
 
 ```bash
-git clone https://github.com/lyramakesmusic/dancediffusion.git
+git clone https://github.com/lyramakesmusic/dance_diffusion.git
 cd dancediffusion
-pip install ...
+pip install -e .
 ```
 
 Note: Make sure you have the required trained model checkpoint file (`.ckpt`) in the project directory.

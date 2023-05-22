@@ -1,8 +1,0 @@
-ftfy
-regex
-requests
-Pillow
-torch
-torchvision
-tqdm
-clip-anytorch

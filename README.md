@@ -19,12 +19,12 @@ Note: Make sure you have the required trained model checkpoint file (`.ckpt`) in
 
 Here is a small collection of models I've finetuned. Quality *will* vary!
 
-| Model      | Link |
-| ----------- | ----------- |
-| Neuro & dubstep basses | [3.3GB Download](https://drive.google.com/file/d/1-IL74bhrZKrYbjfmEmG70dEWezFfxJgW/view?usp=sharing)|
-| Drum fills   | [3.3GB Download](https://drive.google.com/file/d/1-B2S1AhyDz4eMK9n3xRnPclW4OzV7lLf/view?usp=sharing)        |
-| Hardstyle kicks | [3.3GB Download](https://drive.google.com/file/d/1-S6gGj5qW1mKQP4yxNyO4XXpUzZkjYsU/view?usp=sharing)  |
-| Top loops | [3.3GB Download](https://drive.google.com/file/d/1-IMK47o1HhqCSHoolsEx-cKnIijkrDDC/view?usp=sharing) |
+| Model      | Sample Length | Sample Rate | Link |
+| ----------- | ----------- | ----------- | ----------- |
+| Neuro & dubstep basses | 131072 | 44100 | [3.3GB Download](https://drive.google.com/file/d/1-IL74bhrZKrYbjfmEmG70dEWezFfxJgW/view?usp=sharing)|
+| Drum fills   | 131072 | 44100 | [3.3GB Download](https://drive.google.com/file/d/1-B2S1AhyDz4eMK9n3xRnPclW4OzV7lLf/view?usp=sharing)        |
+| Hardstyle kicks | 65536 | 44100 | [3.3GB Download](https://drive.google.com/file/d/1-S6gGj5qW1mKQP4yxNyO4XXpUzZkjYsU/view?usp=sharing)  |
+| Top loops | 131072 | 44100 | [3.3GB Download](https://drive.google.com/file/d/1-IMK47o1HhqCSHoolsEx-cKnIijkrDDC/view?usp=sharing) |
 
 
 ## Usage

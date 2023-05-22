@@ -58,7 +58,7 @@ output_folder = "outputs"
 batch_size = 5
 steps = 100
 
-model = DiffusionUncond(ckpt_path, sample_size, sample_rate)
+model = dd(ckpt_path, sample_size, sample_rate)
 save_paths = model.generate_audio(output_folder, batch_size, sample_size, steps)
 
 print("Generated audio files:")

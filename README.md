@@ -11,7 +11,6 @@ git clone https://github.com/lyramakesmusic/dance_diffusion.git
 cd dance_diffusion
 pip install -e .
 pip install -r requirements.txt
-pip install torch==1.12.1+cu113 torchaudio==0.12.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
 Note: Make sure you have the required trained model checkpoint file (`.ckpt`) in the project directory.

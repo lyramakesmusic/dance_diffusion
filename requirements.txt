@@ -1,5 +1,5 @@
-torch
-torchaudio
+torch==1.12.1+cu113
+torchaudio==0.12.1+cu113
 einops
 scipy
 ipywidgets==7.7.1
